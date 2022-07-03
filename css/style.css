@@ -239,7 +239,7 @@ body{
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 80px;
+    margin-top: 70px;
 }
 .share-link {
     margin-left: 20px;
@@ -306,7 +306,7 @@ body{
 }
 .all-articles-date{
     width: 280px;
-    margin-top: 40px;
+    margin-top: 25px;
 }
 .articles-item-right{
     margin-left: 20px;
@@ -496,6 +496,31 @@ footer{
 }
 .footer-start-item {
     margin-bottom: 20px;
+    display: flex;
+}
+.footer-start-item:first-child::before {
+    display: inline-block;
+    content: "A.";
+    width: 8px;
+    height: 8px;
+    margin-right: 20px;
+    color: #FFFFFF;
+}
+.footer-start-item:nth-child(2)::before {
+    display: inline-block;
+    content: "T.";
+    width: 8px;
+    height: 8px;
+    margin-right: 20px;
+    color: #FFFFFF;
+}
+.footer-start-item:last-child::before {
+    display: inline-block;
+    content: "E.";
+    width: 8px;
+    height: 8px;
+    margin-right: 20px;
+    color: #FFFFFF;
 }
 .footer-start-link {
     font-weight: var(--project-title-weight);
@@ -522,10 +547,10 @@ footer{
 }
 
 .follow-us {
-    padding-bottom: 20px;
     color: #FFFFFF;
 }
 .footer-end-list {
+    margin-top: 30px;
     padding-left: 0;
 }
 .footer-end-item {
@@ -538,5 +563,5 @@ footer{
     margin-bottom: 50px;
     font-size: 15px;
     color: #F4F4F4;
-    opacity: 0.5;
+    opacity: 0.3;
 }
